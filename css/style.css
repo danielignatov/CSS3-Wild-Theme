@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Varela Round', sans-serif;
+	background-color: lightblue;
+	color: white;
+    font-size: 16px; /* Default Font Size */
+}
+
+h1 {
+	font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+p {
+    font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+img {
+    max-width: auto;
+    max-height: auto;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-header {
+	background-color: #ccff77;
+}
+
+#logo {
+	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+    background-color: white;
+    width: 15%;
+    color: #666;
+    margin: left;
+	padding: 2% 2% 2% 2%;
+	text-align: center;
+	text-shadow: 1px 1px #999;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+#navigation {
+	padding: 0 3% 0 3%;
+	text-align: right;
+	background-color: lightblue;
+}
+
+.main-header nav ul li {
+    display: inline;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.main-header nav a:link, .main-header nav a:visited {
+	text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 20px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.main-header nav a:hover, .main-header nav a:active, .main-header nav .active a:link, .main-header nav .active a:visited {
+	text-shadow: 0 1px #999;
+	text-decoration: none;
+    background-color: #ccff77;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+/* Content of site starts here */
+
+.main-content {
+    color: #666;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: white;
+    padding: 1% 1% 1% 1%;
+    overflow: auto;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+#image {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+#image img {
+    max-width: auto;
+    max-height: auto;
+}
+
+#article-body {
+    width: 50%;
+    float: right;
+}
+
+#article-body header {
+    text-shadow: 0 1px #999;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+}
+
+#article-body p {
+    padding: 1% 2% 1% 2%;
+}
+
+#signature-text {
+    font-style: italic;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-content {
+    width: 748px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.main-content {
+    width: 460px;
+}
+
+#image {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#article-body {
+    width: 100%;
+    float: left;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+    width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-content {
+    width: 100%;
+    }
+}
